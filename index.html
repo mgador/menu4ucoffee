@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu4U</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha384-Zv3X5dmhSiU+G3COv8Iok28toZvHKZGbUp0icbXkSp67FP2KJxTC8LRrBYBom+CG"
+      crossorigin="anonymous"
+    />
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="./css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  </head>
+  <body>
+    <!-- Ads -->
+    <div
+      class="position-absolute z-3 top-50 start-50 translate-middle-x d-none"
+      id="ads"
+    >
+      <div class="card">
+        <button
+          type="button"
+          class="btn-close"
+          aria-label="Close"
+          id="close-ad"
+        ></button>
+        <img src="./img/Menu4you.gif" alt="" class="d-block w-100" />
+      </div>
+
+      <!-- <img src="./img/Menu4youu.png" alt="" class="d-block w-100" /> -->
+    </div>
+    <main id="main-content">
+      <!-- Navbar Start -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand m-3 p-1" href="#"></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="true"
+            aria-label="Toggle navigation"
+          >
+            <span
+              ><img
+                src="./img/menu.png"
+                style="width: 25px; height: auto; border: none"
+            /></span>
+          </button>
+          <div class="navbar-collapse collapse" id="navbarNavDropdown" style="">
+            <ul class="navbar-nav text-warning" style="margin: auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-warning display-4"
+                  aria-current="page"
+                  href="#home"
+                  style="letter-spacing: 5px"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item dropdown text-warning">
+                <a
+                  class="nav-link dropdown-toggle text-warning display-4"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  style="letter-spacing: 5px"
+                >
+                  Menu
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#hot-cold">Hot & Cold</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#frappe-pastry"
+                      >Iced Coffee</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" href="#add-ons">Add-Ons</a></li>
+                </ul>
+              </li>
+              <li class="nav-item text-warning">
+                <a
+                  class="nav-link text-warning display-4"
+                  href="#about"
+                  style="letter-spacing: 5px"
+                  >About</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar End -->
+
+      <!-- Intro Start -->
+      <div id="home">
+        <div
+          id="carouselExampleFade"
+          class="carousel slide carousel-fade"
+          data-bs-ride="carousel"
+        >
+          <!-- Added data-bs-ride="carousel" -->
+          <div class="carousel-inner">
+            <div class="carousel-item carousel-item-next carousel-item-start">
+              <img src="./img/promotion.gif" class="d-block w-100" alt="..." />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleFade"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleFade"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <!-- Intro End -->
+
+      <!-- About Start -->
+      <div class="container-fluid pb-5 text-center"></div>
+      <!-- About End -->
+
+      <!-- Menu Start -->
+      <div class="container-fluid pt-5 bg-dark bg-gradient" id="hot-cold">
+        <h3 class="text title text-center text-white display-4">Our Menu</h3>
+        <div class="container-menu container">
+          <div class="section-title">
+            <h4 class="text text-uppercase" style="letter-spacing: 5px">
+              HOT & COLD
+            </h4>
+            <h1 class="display-4 text-white">Delicious Offerings</h1>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <h1 class="text-warning">Hot Beverages</h1>
+              <p class="pb-5 text-secondary">(Starting at <b>₱68</b>)</p>
+
+              <div class="row align-items-center mb-5">
+                <div class="col-4 col-sm-3">
+                  <img
+                    class="w-100 rounded-circle mb-3 mb-sm-0"
+                    src="img/menu-1.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="col-8 col-sm-9">
+                  <h4 class="text-warning">Classic Espresso</h4>
+                  <p class="m-0 text-white">
+                    Indulge in the rich aroma and bold flavor of our classic
+                    espresso.
+                  </p>
+                </div>
+              </div>
+              <div class="row align-items-center mb-5">
+                <div class="col-4 col-sm-3">
+                  <img
+                    class="w-100 rounded-circle mb-3 mb-sm-0"
+                    src="img/menu-2.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="col-8 col-sm-9">
+                  <h4 class="text-warning">Cappuccino</h4>
+                  <p class="m-0 text-white">
+                    A delightful blend of espresso and creamy steamed milk,
+                    topped with a generous amount of froth.
+                  </p>
+                </div>
+              </div>
+              <div class="row align-items-center mb-5">
+                <div class="col-4 col-sm-3">
+                  <img
+                    class="w-100 rounded-circle mb-3 mb-sm-0"
+                    src="img/menu-3.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="col-8 col-sm-9">
+                  <h4 class="text-warning">Mocha Latte</h4>
+                  <p class="m-0 text-white">
+                    Indulge in the perfect combination of espresso, steamed
+                    milk, and rich chocolate syrup.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <h1 class="text-warning">Cold Beverages</h1>
+              <p class="pb-5 text-secondary">(Starting at <b>₱108</b>)</p>
+              <div class="row align-items-center mb-5">
+                <div class="col-4 col-sm-3">
+                  <img
+                    class="w-100 rounded-circle mb-3 mb-sm-0"
+                    src="img/menu-4.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="col-8 col-sm-9">
+                  <h4 class="text-warning">Iced Americano</h4>
+                  <p class="m-0 text-white">
+                    Stay refreshed with our invigorating blend of espresso and
+                    cold water, served over ice.
+                  </p>
+                </div>
+              </div>
+              <div class="row align-items-center mb-5">
+                <div class="col-4 col-sm-3">
+                  <img
+                    class="w-100 rounded-circle mb-3 mb-sm-0"
+                    src="img/menu-5.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="col-8 col-sm-9">
+                  <h4 class="text-warning">Frozen Frappuccino</h4>
+                  <p class="m-0 text-white">
+                    Satisfy your sweet tooth with our icy blend of espresso,
+                    milk, and flavored syrups.
+                  </p>
+                </div>
+              </div>
+              <div class="row align-items-center mb-5">
+                <div class="col-4 col-sm-3">
+                  <img
+                    class="w-100 rounded-circle mb-3 mb-sm-0"
+                    src="img/menu-6.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="col-8 col-sm-9">
+                  <h4 class="text-warning">Iced Tea</h4>
+                  <p class="m-0 text-white">
+                    Quench your thirst with our refreshing brewed iced tea,
+                    available in a variety of flavors.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Menu End -->
+
+      <!-- 2nd Menu Start -->
+      <div class="container-fluid pt-5" id="frappe-pastry">
+        <div class="container-menu container">
+          <div class="section-title">
+            <h4 class="text text-uppercase" style="letter-spacing: 5px">
+              FRAPPE & PASTRY
+            </h4>
+            <h1 class="display-4">Sweet Offerings</h1>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <h1 class="">FRAPPE</h1>
+              <p class="pb-5 text-secondary">(Starting at <b>₱120</b>)</p>
+              <div class="row align-items-center mb-5">
+                <div class="col-4 col-sm-3">
+                  <img
+                    class="w-100 rounded-circle mb-3 mb-sm-0"
+                    src="img/menu-11.png"
+                    alt=""
+                  />
+                </div>
+                <div class="col-8 col-sm-9">
+                  <h4>Mango Graham</h4>
+                  <p class="m-0">
+                    Indulge in the rich aroma and bold flavor of our classic
+                    espresso.
+                  </p>
+                </div>
+              </div>
+              <div class="row align-items-center mb-5">
+                <div class="col-4 col-sm-3">
+                  <img
+                    class="w-100 rounded-circle mb-3 mb-sm-0"
+                    src="img/menu-12.png"
+                    alt=""
+                  />
+                </div>
+                <div class="col-8 col-sm-9">
+                  <h4>JAVA CHIP</h4>
+                  <p class="m-0">
+                    A delightful blend of espresso and creamy steamed milk,
+                    topped with a generous amount of froth.
+                  </p>
+                </div>
+              </div>
+              <div class="row align-items-center mb-5">
+                <div class="col-4 col-sm-3">
+                  <img
+                    class="w-100 rounded-circle mb-3 mb-sm-0"
+                    src="img/menu-10.png"
+                    alt=""
+                  />
+                </div>
+                <div class="col-8 col-sm-9">
+                  <h4>VANILLA MACHA</h4>
+                  <p class="m-0">
+                    Indulge in the perfect combination of espresso, steamed
+                    milk, and rich chocolate syrup.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <h1 class="">CROFFLES</h1>
+              <p class="pb-5 text-secondary">(Starting at <b>₱80</b>)</p>
+              <div class="row align-items-center mb-5">
+                <div class="col-4 col-sm-3">
+                  <img
+                    class="w-100 rounded-circle mb-3 mb-sm-0"
+                    src="img/menu-8.png"
+                    alt=""
+                  />
+                </div>
+                <div class="col-8 col-sm-9">
+                  <h4>Plain</h4>
+                  <p class="m-0">
+                    Stay refreshed with our invigorating blend of espresso and
+                    cold water, served over ice.
+                  </p>
+                </div>
+              </div>
+              <div class="row align-items-center mb-5">
+                <div class="col-4 col-sm-3">
+                  <img
+                    class="w-100 rounded-circle mb-3 mb-sm-0"
+                    src="img/menu-9.png"
+                    alt=""
+                  />
+                </div>
+                <div class="col-8 col-sm-9">
+                  <h4>Nutella</h4>
+                  <p class="m-0">
+                    Satisfy your sweet tooth with our icy blend of espresso,
+                    milk, and flavored syrups.
+                  </p>
+                </div>
+              </div>
+              <div class="row align-items-center mb-5">
+                <div class="col-4 col-sm-3">
+                  <img
+                    class="w-100 rounded-circle mb-3 mb-sm-0"
+                    src="img/menu-7.png"
+                    alt=""
+                  />
+                </div>
+                <div class="col-8 col-sm-9">
+                  <h4>Cookies and Cream</h4>
+                  <p class="m-0">
+                    Quench your thirst with our refreshing brewed iced tea,
+                    available in a variety of flavors.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2nd Menu End -->
+
+      <!-- Footer Start -->
+      <div
+        class="container-fluid footer text-white mt-3 pt-3 px-0 position-relative overlay-top"
+        id="about"
+      >
+        <div class="row mx-0 pt-5 px-sm-2 px-lg-5">
+          <h4 class="text-white text-uppercase" style="letter-spacing: 3px">
+            Created by:
+          </h4>
+          <p>
+            <i class="fas fa-user"></i> Marco Gador
+            <i class="fas fa-user" style="margin-left: 50px"></i> Clifford
+            Lorenzo F. Laureles
+            <i class="fas fa-user mr-2" style="margin-left: 50px"></i> Ralph
+            Matthew Salimbagat
+            <i class="fas fa-user mr-2" style="margin-left: 50px"></i> Francis
+            Somido
+          </p>
+        </div>
+      </div>
+      <!-- Footer End -->
+    </main>
+    <script src="./index.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+  </body>
+</html>
